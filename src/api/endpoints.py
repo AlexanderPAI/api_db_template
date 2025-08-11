@@ -6,6 +6,7 @@ from src.services.DBService import create_employee
 router = APIRouter()
 
 
+# todo сделать еще две ручки
 @router.post("/employee")
 async def employee(data: dict[Any, Any]):
     employee = await create_employee(data)
